@@ -1,0 +1,15 @@
+##############################################
+#              InstantItemPickUp             #
+#--------------------------------------------#
+#      Removes the wait time before being    #
+#      able to pick up an item when it drops #
+##############################################
+
+name: InstantItemPickUp
+version: 1.0.0
+api-version: 1.14
+main: ezzerland.ravenloftmc.instantitempickup
+load: POSTWORLD
+description: "Removes the wait time necessary to pick up an item when it has dropped"
+author: Ezzerland
+authors: [Twage]

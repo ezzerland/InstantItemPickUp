@@ -1,5 +1,6 @@
 package ezzerland.ravenloftmc;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.bukkit.event.EventHandler;
@@ -11,8 +12,12 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 public class InstantItemPickUp extends JavaPlugin implements Listener
 {
-  public void onEnable() { getServer().getPluginManager().registerEvents(this, this); }
   public List<Integer> ignore;
+  public void onEnable()
+  {
+    getServer().getPluginManager().registerEvents(this, this);
+    ignore = new ArrayList<Integer>();
+  }
   
   @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGHEST)
   public void onPlayerDropItem (PlayerDropItemEvent e)

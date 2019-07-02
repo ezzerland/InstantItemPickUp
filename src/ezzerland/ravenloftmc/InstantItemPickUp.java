@@ -9,7 +9,7 @@ import org.bukkit.event.entity.ItemSpawnEvent;
 import org.bukkit.event.player.PlayerDropItemEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class instantitempickup extends JavaPlugin implements Listener
+public class InstantItemPickUp extends JavaPlugin implements Listener
 {
   public void onEnable() { getServer().getPluginManager().registerEvents(this, this); }
   public List<Integer> ignore;

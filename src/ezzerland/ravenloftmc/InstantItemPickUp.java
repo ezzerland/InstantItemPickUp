@@ -19,7 +19,7 @@ public class InstantItemPickUp extends JavaPlugin implements Listener
     ignore = new ArrayList<Integer>();
   }
   
-  @EventHandler(ignoreCancelled = true, priority = EventPriority.HIGHEST)
+  @EventHandler(ignoreCancelled = false, priority = EventPriority.HIGHEST)
   public void onPlayerDropItem (PlayerDropItemEvent e)
   { // If player drops item, add to ignore list, otherwise player can't drop item
     ignore.add(Integer.valueOf(e.getItemDrop().getEntityId()));
